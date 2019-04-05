@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html
+        xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:th="http://www.thymeleaf.org"
+        xmlns:shiro="http://www.pollix.at/thymeleaf/shiro"
+        xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<font color="red" >进入登录成功页面</font>
+
+<a href="/logout">注销</a>
+<button value="查询订单" shiro:hasPermission="book:query"></button>
+<button value="查询所有订单" shiro:hasPermission="book:queryAll"></button>
+<button value="查询所有订单" shiro:hasPermission="book:update"></button>
+
+</body>
+</html>
