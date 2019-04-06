@@ -80,13 +80,13 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
         </dependency>
-        <!-- shiro与spring整合依赖 -->
+        <!--shiro-->
         <dependency>
             <groupId>org.apache.shiro</groupId>
-            <artifactId>shiro-spring</artifactId>
+            <artifactId>shiro-all</artifactId>
             <version>1.4.0</version>
+            <type>pom</type>
         </dependency>
-
         <!--thymeleaf和shiro整合包-->
         <dependency>
             <groupId>com.github.theborakompanioni</groupId>
