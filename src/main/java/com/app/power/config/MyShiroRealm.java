@@ -1,8 +1,9 @@
 package com.app.power.config;
-import com.app.entity.UserInfo;
-import com.app.mapper.SysPermissionMapper;
-import com.app.mapper.SysRoleMapper;
-import com.app.service.UserInfoService;
+
+import com.app.power.entity.UserInfo;
+import com.app.power.mapper.SysPermissionMapper;
+import com.app.power.mapper.SysRoleMapper;
+import com.app.power.service.UserInfoService;
 import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.authc.AuthenticationInfo;
 import org.apache.shiro.authc.AuthenticationToken;
@@ -16,7 +17,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 /**
  * @author zack
- * @date 2018-12-01 21:25
+ * @date 2018-12-01 21:12
  */
 public class MyShiroRealm extends AuthorizingRealm {
     @Autowired

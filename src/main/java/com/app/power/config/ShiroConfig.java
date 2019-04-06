@@ -18,7 +18,7 @@ import java.util.Properties;
 
 /**
  * @author zack
- * @date 2018-12-01 21:31
+ * @date 2018-12-01 21:12
  */
 @Configuration
 public class ShiroConfig {

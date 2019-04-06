@@ -8,6 +8,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import javax.servlet.http.HttpServletRequest;
 import java.util.Map;
 
+/**
+ * @author zack
+ * @date 2018-12-01 21:12
+ */
 @Controller
 public class HomeController {
     @RequestMapping({"/","/index"})
