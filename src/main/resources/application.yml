@@ -68,7 +68,7 @@ mybatis-plus:
     cache-enabled: false
 # Logger Config
 logging:
-  path: maven-logs
+  path: logs
   level:
     com.app.power: debug  #这个改成自己项目路径,不然可能报错
 #支持网页格式为HTML5
