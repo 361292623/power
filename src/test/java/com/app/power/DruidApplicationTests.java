@@ -13,8 +13,8 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = { PowerApplication.class })
-public class BadgerDruidApplicationTests {
+@SpringBootTest
+public class DruidApplicationTests {
 
     @Autowired
     DataSource dataSource;
@@ -26,8 +26,7 @@ public class BadgerDruidApplicationTests {
                 .prepareStatement("select * from t7 ");
         ResultSet resultSet = prepareStatement.executeQuery();
         while (resultSet.next()) {
-//            String cityName = resultSet.getString("name");
-            System.out.println("ok");
+            System.out.print("ok,");
         }
     }
 }
