@@ -17,5 +17,6 @@ public class UserInfoServiceImpl implements UserInfoService {
     @Override
     public UserInfo findByUsername(String username) {
         return userInfoMapper.findByUsername(username);
+
     }
 }

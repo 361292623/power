@@ -1,15 +1,26 @@
 package com.app.power.config;
 
+import com.baomidou.mybatisplus.core.injector.ISqlInjector;
+import com.baomidou.mybatisplus.extension.injector.LogicSqlInjector;
 import com.baomidou.mybatisplus.extension.plugins.PaginationInterceptor;
 import com.baomidou.mybatisplus.extension.plugins.PerformanceInterceptor;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
 
+@EnableTransactionManagement
 @Configuration
 //扫描dao或者是Mapper接口
 @MapperScan("com.app.power.mapper.*")
 public class MybatisPlusConfig {
+    /**
+     * 逻辑删除
+     * */
+    @Bean
+    public ISqlInjector sqlInjector(){
+        return new LogicSqlInjector();
+    }
 
     /**
      * mybatis-plus SQL执行效率插件【生产环境可以关闭】
