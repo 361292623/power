@@ -52,7 +52,7 @@ spring:
       # 配置监控服务器
       stat-view-servlet:
         login-username: admin
-        login-password: 123456
+        login-password: admin
         reset-enable: false
         url-pattern: /druid/*
         # 添加IP白名单
@@ -103,7 +103,7 @@ spring:
       port: 35729
     restart:
       enabled: true #是否支持热部署
-      exclude: /views/**
+      exclude: /static/**
 # classpath目录下的WEB-INF文件夹内容修改不重启
 #mybaits-plus配置，修改主键类型，mapper.xml、type 别名等
 mybatis-plus:
